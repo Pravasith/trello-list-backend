@@ -1,0 +1,19 @@
+{
+  "name": "trello-list-backend",
+  "version": "1.0.0",
+  "description": "Trello Aggregator APIs",
+  "main": "./build/serve.js",
+  "repository": "https://github.com/Pravasith/trello-list-backend.git",
+  "author": "Pravas Chinthoju <pravasith@gmail.com>",
+  "license": "y",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon -e ts --exec ts-node src/serve.ts --watch src",
+    "start": "node build/serve.js",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
