@@ -9,12 +9,12 @@ dotenv.config()
 
 const router = Router()
 
-// router.get('/', (req, res) => {
-//     req
-//     res.send({
-//         hello: process.env.PRAVAS_TRELLO_KEY
-//     })
-// })
+router.get('/', (req, res) => {
+    req
+    res.send({
+        hello: 'Trello'
+    })
+})
 
 
 router.get(urls.GET_TRELLO_BOARD, async (req, res) => {
