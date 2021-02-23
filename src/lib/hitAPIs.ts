@@ -9,13 +9,6 @@ export interface fetchOptions {
 }
 
 
-// const fetchData = (url: string, options: fetchOptions) => {
-//     const { method } = options
-
-//     if(method === 'get') return handleGET(url, options)
-//     else return handlePOST(url, options)
-// }
-
 
 export const handlePOST = <T>(url: string, options: fetchOptions): Promise<T>=> {
     return fetch(

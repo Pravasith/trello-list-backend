@@ -8,3 +8,8 @@ export interface ITrelloBoard {
         backgroundImage: string
     }
 }
+
+export interface ITrelloList {
+    name: string
+    id: string
+}
