@@ -9,7 +9,7 @@ const port = 8000 // default port to listen
 
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://spotifinder.vercel.app'],
+    origin: ['http://localhost:3000', 'https://trello-list-frontend-pravas.vercel.app'],
     // origin: ['https://spotifinder.vercel.app'], 
 
     credentials: true, // <-- REQUIRED backend setting
