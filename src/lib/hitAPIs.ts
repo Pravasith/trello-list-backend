@@ -10,7 +10,7 @@ export interface fetchOptions {
 
 
 
-export const handlePOST = <T>(url: string, options: fetchOptions): Promise<T>=> {
+export const fetchData = <T>(url: string, options: fetchOptions): Promise<T>=> {
     return fetch(
             url,
             options
@@ -18,12 +18,12 @@ export const handlePOST = <T>(url: string, options: fetchOptions): Promise<T>=> 
         .then((res) => res.json() as Promise<T>)
 }
 
-export const handleGET = <T>(url: string, options: fetchOptions): Promise<T>=> {
-    return fetch(
-            url,
-            options
-        )
-        .then((res) => res.json() as Promise<T>)
-}
+// export const handleGET = <T>(url: string, options: fetchOptions): Promise<T>=> {
+//     return fetch(
+//             url,
+//             options
+//         )
+//         .then((res) => res.json() as Promise<T>)
+// }
 
 // export default fetchData
